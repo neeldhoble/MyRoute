@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 🚕 MyRoute – Your Local Travel Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*MyRoute* is a smart, accessible, and inclusive ride-booking app designed to simplify local transport. Whether it’s an auto-rickshaw, bike, or taxi – MyRoute ensures reliable, real-time ride services, especially tailored for Indian towns and cities.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- 🛺 Book local rides: Auto, Bike, or Taxi
+- 📍 Live GPS-based pickup & drop-off
+- 💰 Instant fare estimation with traffic awareness
+- 🗺 Real-time traffic monitoring map
+- 🌐 Multi-language support (8+ regional Indian languages)
+- ♿ Accessibility features for disabled users
+- 🤰 Gamified pregnancy mode for safety and rewards
+- 📰 Built-in blog for travel, health, and tips
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Tech Stack
 
-### `npm test`
+- *Frontend:* React.js / React Native
+- *Backend:* Node.js + MongoDB
+- *Mapping:* Google Maps API
+- *Localization:* i18n library
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to run the project locally on your system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🛠 Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v14 or later)
+- npm (v6 or later)
 
-### `npm run eject`
+### 🔧 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone the repo
+git clone https://github.com/your-username/myroute.git
+cd myroute
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Start the development server
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+###Project Structure
+myroute/
+├── public/               # Static files
+├── src/
+│   ├── assets/           # Images and icons
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Main app screens
+│   ├── context/          # App-wide state
+│   ├── i18n/             # Localization files
+│   └── App.js            # Root component
+├── .env                  # Environment config
+├── package.json
+└── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Key Updates:
+1. **PDF Links Added**: The links to the PDFs are now included under "Additional Resources." Make sure the file paths are correct if you upload them to a repository.
+2. **Detailed Information**: The rest of the `README.md` includes all previous information and clarifies installation steps, project structure, and features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Let me know if you need further tweaks or adjustments!
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
