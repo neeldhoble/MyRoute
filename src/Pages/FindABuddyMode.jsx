@@ -9,11 +9,11 @@ const FindABuddyMode = () => {
   const handleLocationChange = (e) => setLocation(e.target.value);
 
   const handleFindBuddy = () => {
-    // Simulated travel buddy data (replace with real DB/API integration later)
+    // Simulated travel buddy data (within Nagpur)
     const potentialTravelers = [
-      { name: 'John Doe', destination: 'Nagpur' },
-      { name: 'Aisha Khan', destination: 'Nagpur' },
-      { name: 'Ravi Mehta', destination: 'Pune' },
+      { name: 'Joel Jorge', destination: 'Sitabuldi', phone: '9876543210' },
+      { name: 'Aisha Khan', destination: 'MIHAN', phone: '9988776655' },
+      { name: 'Ravi Mehta', destination: 'Dharampeth', phone: '9123456789' },
     ];
 
     const matched = potentialTravelers.filter(
@@ -35,7 +35,7 @@ const FindABuddyMode = () => {
         >
           <h1 className="text-4xl font-extrabold text-gray-800">Find-a-Buddy Mode</h1>
           <p className="text-lg text-gray-700">
-            Heading to a destination alone? Find others traveling to the same place and make new connections.
+            Traveling within Nagpur? Choose your area and find others headed there too!
           </p>
         </motion.div>
 
@@ -47,14 +47,19 @@ const FindABuddyMode = () => {
             className="space-y-6"
           >
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <label className="block text-gray-700 font-semibold">Destination</label>
-              <input
-                type="text"
+              <label className="block text-gray-700 font-semibold">Choose Area in Nagpur</label>
+              <select
                 value={location}
                 onChange={handleLocationChange}
                 className="w-full mt-2 p-3 border rounded-lg"
-                placeholder="Enter your travel destination"
-              />
+              >
+                <option value="">-- Select Destination --</option>
+                <option value="Sitabuldi">Sitabuldi</option>
+                <option value="MIHAN">MIHAN</option>
+                <option value="Dharampeth">Dharampeth</option>
+                <option value="Trimurti Nagar">Trimurti Nagar</option>
+                <option value="Sadar">Sadar</option>
+              </select>
             </div>
 
             <button
@@ -79,14 +84,15 @@ const FindABuddyMode = () => {
                   {buddyList.map((buddy, index) => (
                     <li key={index}>
                       <span className="font-semibold text-blue-700">{buddy.name}</span> is also heading to{' '}
-                      <span className="italic">{buddy.destination}</span>
+                      <span className="italic">{buddy.destination}</span>. <br />
+                      📞 <span className="text-gray-800">{buddy.phone}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             ) : matching ? (
               <div className="bg-white p-6 rounded-lg shadow-md text-gray-700">
-                No travelers found for that destination. Try a nearby city!
+                No travelers found for that destination. Try another area!
               </div>
             ) : null}
           </motion.div>
